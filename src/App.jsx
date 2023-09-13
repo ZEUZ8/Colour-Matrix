@@ -14,7 +14,7 @@ function App() {
         const handledBox = box.map((val)=>{
           if(order > 8){
             if(val.id === id){
-              val.color = 'red'
+              val.color = 'orange'
               val.order = order;
               val.clicked = true;
               setOrder(prev => prev+1);
@@ -40,7 +40,7 @@ function App() {
             let rev = boxorder.reverse().map((val, i) => {
               console.log(val,"ll");
               setTimeout(() => {
-                val.color = 'red';
+                val.color = 'orange';
                 setBox([...box]); // Update the state to trigger a re-render
               }, 800 * i);
               return val;
