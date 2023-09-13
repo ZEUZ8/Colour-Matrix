@@ -1,0 +1,25 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  height: 90vh;
+}
+
+.parent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px; 
+  width: 300px; 
+  margin: 0 auto; 
+  background-color: rgb(82, 82, 82);
+  padding: 10px;
+}
+
+.box{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
