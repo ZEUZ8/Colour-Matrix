@@ -8,6 +8,7 @@ body{
 
 .parent{
   display: grid;
+  border-radius: 4px;
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 10px; 
   width: 300px; 
@@ -22,4 +23,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  perspective: 1000px; 
+  transition: transform 0.5s;
+}
+
+.flipped {
+  transform: rotateY(180deg);
 }
